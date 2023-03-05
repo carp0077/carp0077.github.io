@@ -1,3 +1,133 @@
 <!DOCTYPE html>
 <html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Basic HTML">
+		<meta name="keywords" content="HTML, assignment">
+		<meta name="author" content="Nicole Carpenter">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="Flower.png" width="3" height="auto">
+		<title>Assignment 2</title>
+		<style>
+			body {
+  				background: #ccc;
+				}
+			.wrap {
+ 				max-width: 1280px;
+  				margin: auto;
+  				overflow: hidden;
+  				position: relative;
+				display: flex;
+				}
+			.col1,
+			.col2 {
+  				padding: 10px;
+  				text-align: justify;
+  				width: calc(50% + 220px);
+				}
+			p {
+  				padding: 5px;
+  				margin: 0 0 1em;
+				}
+			.col1:before,
+			.col2:before {
+  				float: right;
+  				width: 1px;
+  				height: 90px;
+  				content: " ";
+				}
+			.col2:before {
+  				float: left;
+				}
+			.img {
+  				float: right;
+  				clear: right;
+  				margin: 20px 0 20px 20px;
+  				border-radius: 50%;
+  				border: 10px solid #fff;
+				shape-outside: circle(50%);
+				}
+			.col2 img {
+  				float: left;
+  				margin: 20px 20px 20px 0;
+  				clear: left;
+				}
+			.col1 .inner {
+  				margin-right: 220px;
+				}
+			.col2 .inner {
+  				margin-left: 220px;
+				}
+			.col2 {
+  				margin-left: -440px;
+				}
+
+			@media screen and (max-width: 800px) {
+  				.wrap {
+    				display: block;
+  					}
+  				.col2:before {
+    				display: none;
+  					}
+  				.col1,
+  				.col2,
+  				.col1 .inner,
+  				.col2 .inner {
+    				width: auto;
+    				margin: 0;
+  					}
+  				.col2 .img {
+   					display: none;
+  					}
+  				.img {
+    				width: 400px;
+    				height: 400px;
+  					}
+				}
+
+			@media screen and (max-width: 480px) {
+  				.col1:before {
+    				display: none;
+  					}
+				}
+		</style>
+	</head>
+
+	<body>
+		<h1 style="border: 5px solid black; text-align: center;">TITLE HERE</h1>
+		<div class="wrap">
+  <div class="col1">
+  		<img class="img" src="Emoji.png" alt="Emoji with moustache" style="width:400px;height:400px;">
+    <div class="inner">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ultrices felis et neque egestas suscipit. Donec tortor odio, pulvinar non tristique ac imperdiet sed libero. Nulla facilisi. Integer nisi nulla, consectetur auctor laoreet sed, gravida
+        non nulla. Cras volutpat aliquet volutpat. Sed ligula nibh, feugiat at sollicitudin sit amet, dignissim eget velit. Aenean consectetur aliquam urna, non mattis risus dictum ac. In hac habitasse platea dictumst. Sed ac magna metus. Nulla facilisi.
+        Integer nisi nulla, consectetur auctor laoreet sed, gravida non nulla. Cras volutpat aliquet volutpat. Sed ligula nibh, feugiat at sollicitudin sit amet, dignissim eget velit. Aenean consectetur aliquam urna, non mattis risus dictum ac. In hac
+        habitasse platea dictumst. Sed ac magna metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ultrices felis et neque egestas suscipit. Donec tortor odio, pul vinar non tristique ac, imperdiet sed libero. Nulla facilisi. Integer
+        nisi nulla, consectetur auctor laoreet sed, gravida non nulla. Cras volutpat aliquet volutpat. Sed ligula nibh, feugiat at sollicitudin sit amet, dignissim eget velit. Aenean consectetur aliquam urna, non mattis risus dictum ac. In hac habitasse
+        platea dictumst. Sed ac magna metus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ultrices felis et neque egestas suscipit. Donec tortor odio, pulvinar non tristique ac imperdiet sed libero. Nulla facilisi. Integer nisi nulla, consectetur
+        auctor laoreet sed, gravida non nulla. Cras volutpat aliquet volutpat. Sed ligula nibh, feugiat at sollicitudin sit amet, dignissim eget velit. Aenean consectetur aliquam urna, non mattis risus dictum ac. In hac habitasse platea dictumst. Sed
+        ac magna metus. Nulla facilisi. Integer nisi nulla, consectetur auctor laoreet sed, gravida non nulla. Cras volutpat aliquet volutpat. Sed ligula nibh, feugiat at sollicitudin sit amet, dignissim eget velit. Aenean consectetur aliquam urna, non
+        mattis risus dictum ac. In hac habitasse. Integer nisi nulla, consectetur auctor laoreet sed, gravida non nulla. Cras volutpat aliquet volutpat. Sed ligula nibh, feugiat at sollicitudin sit amet, dignissim eget velit. Aenean consectetur aliquam
+        urna, non mattis risus dictum ac. In hac habitasse. Integer nisi nulla, consectetur auctor laoreet sed, gravida non nulla. Cras volutpat aliquet volutpat. Sed ligula nibh, feugiat at sollicitudin sit amet, dignissim eget velit. Aenean consectetur
+        aliquam urna, non mattis risus dictum ac. In hac habitasse</p>
+    </div>
+  </div>
+  <div class="col2">
+      <img class="img" src="Emoji.png" alt="Emoji with moustache" style="width:400px;height:400px;">
+      <div class="inner">
+      <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus viverra erat quis massa hendrerit vestibulum. Donec laoreet convallis egestas. Pellentesque habitant morbi tristique senectus et netus et malesuada
+        fames ac turpis egestas. Aliquam erat volutpat. Praesent posuere scelerisque euismod. Etiam ante justo, euismod quis feugiat ut, ullamcorper sit amet ligula. Donec congue odio eget nunc tincidunt nec vehicula mauris tincidunt. Integer ac pellentesque
+        arcu. Vivamus ipsum sapien, auctor eu ornare ac, feugiat lobortis lectus. Nulla facilisi. Integer nisi nulla, consectetur auctor laoreet sed, gravida non nulla. Cras volutpat aliquet volutpat. Sed ligula nibh, feugiat at sollicitudin sit amet,
+        dignissim eget velit. Aenean consectetur aliquam urna, non mattis risus dictum ac. In hac habitasse platea dictumst. Sed ac magna metus. Pellentesque habitantxx morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus viverra
+        erat quis massa hendrerit vestibulum. Donec laoreet convallis egestas. Pellentesque habitantxxx morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam erat volutpat. Praesent posuere scelerisque euismod. Etiam ante justo,
+        euismod quis feugiat ut, ullamcorper sit amet ligula. Donec congue odio eget nunc tincidunt nec vehicula mauris tincidunt. Integer ac pellentesque arcu. Vivamus ipsum sapien, auctor eu ornare ac, feugiat lobortis lectus. Lorem ipsum dolor sit
+        amet, consectetur adipiscing elit. Nam ultrices felis et neque egestas suscipit. Donec tortor odio, pulvinar non tristique ac imperdiet sed libero. Nulla facilisi. Integer nisi nulla, consectetur auctor laoreet sed, gravida non nulla. Cras volutpat
+        aliquet volutpat. Sed ligula nibh, feugiat at sollicitudin sit amet, dignissim eget velit. Aenean consectetur aliquam urna, non mattis risus dictum ac. In hac habitasse platea dictumst. Sed ac magna metus. Nulla facilisi. Integer nisi nulla, consectetur
+        auctor laoreet sed, gravida non nulla. Cras volutpat aliquet volutpat. Sed ligula nibh, feugiat at sollicitudin sit amet, dignissim eget velit. Aenean consectetur aliquam urna, non mattis risus dictum ac. In hac habitasse gravida non nulla. Cras
+        volutpat aliquet volutpat. Sed ligula nibh, feugiat at sollicitudin sit amet, dignissim eget velit. Aenean consectetur aliquam urna, non mattis risus dictum ac. In hac habitasse platea dictumst. Sed ac magna metus. Nulla facilisi. </p>
+    </div>
+  </div>
+</div>
+	</body>
 </html>
