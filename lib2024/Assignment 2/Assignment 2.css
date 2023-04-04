@@ -1,89 +1,63 @@
-body {
-   background: #ccc;
-				}
-			.wrap {
- 				max-width: 1280px;
-  				margin: auto;
-  				overflow: hidden;
-  				position: relative;
-				display: flex;
-				}
-			.col1,
-			.col2 {
-  				padding: 10px;
-  				text-align: justify;
-  				width: calc(50% + 220px);
-				}
-			p {
-  				padding: 5px;
-  				margin: 0 0 1em;
-				}
-			.col1:before,
-			.col2:before {
-  				float: right;
-  				width: 1px;
-  				height: 90px;
-  				content: " ";
-				}
-			.col2:before {
-  				float: left;
-				}
-			.img {
-  				float: right;
-  				clear: right;
-  				margin: 20px 0 20px 20px;
-  				border-radius: 50%;
-  				border: 10px solid #fff;
-				shape-outside: circle(50%);
-				}
-			.col2 img {
-  				float: left;
-  				margin: 20px 20px 20px 0;
-  				clear: left;
-				}
-			.col1 .inner {
-  				margin-right: 220px;
-				}
-			.col2 .inner {
-  				margin-left: 220px;
-				}
-			.col2 {
-  				margin-left: -440px;
-				}
+.wrap {
+    max-width: 1280px;
+  	margin: auto;
+  	overflow: hidden;
+  	position: relative;
+    display: flex;
+		}
+.col1,
+.col2 {
+  	padding: 10px;
+  	text-align: justify;
+  	width: calc(50% + 220px);
+		}
+p {
+  	padding: 5px;
+  	margin: 0 0 1em;
+		}
+.col1:before,
+.col2:before {
+  	float: right;
+  	width: 1px;
+  	height: 90px;
+  	content: " ";
+		}
+.col2:before {
+  	float: left;
+		}
+.img {
+  	float: right;
+  	clear: right;
+  	margin: 20px 0 20px 20px;
+  	border-radius: 50%;
+  	border: 10px solid #fff;
+		shape-outside: circle(50%);
+		}
+.col2 img {
+  	float: left;
+  	margin: 20px 20px 20px 0;
+  	clear: left;
+		}
+.col1 .inner {
+  	margin-right: 220px;
+		}
+.col2 .inner {
+  	margin-left: 220px;
+		}
+.col2 {
+  	margin-left: -440px;
+		}
 
-			@media screen and (max-width: 800px) {
-  				.wrap {
-    				display: block;
-  					}
-  				.col2:before {
-    				display: none;
-  					}
-  				.col1,
-  				.col2,
-  				.col1 .inner,
-  				.col2 .inner {
-    				width: auto;
-    				margin: 0;
-  					}
-  				.col2 .img {
-   					display: none;
-  					}
-  				.img {
-    				width: 400px;
-    				height: 400px;
-  					}
-				}
+.center {
+  margin: auto;
+  width: 50%;
+}
 
-			@media screen and (max-width: 480px) {
-  				.col1:before {
-    				display: none;
-  					}
-				}
-
-        .watermark {
+.watermark {
     /* Used to position the watermark */
     position: relative;
-}
+    background-image: url("https://thumbs.dreamstime.com/b/spring-flowers-grass-green-butterflies-white-background-110452021.jpg");
+    }
 
 .watermark__inner {
     /* Center the content */
@@ -93,13 +67,12 @@ body {
 
     /* Absolute position */
     left: 0px;
-    position: absolute;
     top: 0px;
 
     /* Take full size */
     height: 100%;
     width: 100%;
-}
+  }
 
 .watermark__body {
     /* Text color */
@@ -115,4 +88,13 @@ body {
 
     /* Disable the selection */
     user-select: none;
+}
+
+table, th, td {
+  border: 5px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  background-color: #96D4D4;
+  padding: 10px;
 }
