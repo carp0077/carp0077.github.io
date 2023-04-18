@@ -1,7 +1,0 @@
-Website Color Scheme
-
-Faded Yellow: #f4cc64
-Off-White: #fcfcbc
-Red: #940c14
-Burgundy: #2c0404
-Black: #040404
