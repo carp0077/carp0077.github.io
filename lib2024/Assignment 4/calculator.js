@@ -3,9 +3,8 @@ function temperatureConverter(valNum) {
 }
 
 function validateForm(output, inputFahrenheit) {
-  if (inputFahrenheit.value.length == 0) {
-    alert("Please enter a number in degrees Fahrenheit.");
-    return false;
+  if (inputFahrenheit.value.length == 0 || inputFahrenheit == "") {
+    document.getElementById("outputCelcius").innerHTML = "Please enter a number.";
   } else {
     document.getElementById("outputCelcius").innerHTML = output;
   }
