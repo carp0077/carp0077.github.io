@@ -9,18 +9,34 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="icon" type="image/png" href="images/favicon.png">
 		<script type="text/javascript" src="calculator.js"></script>
+		<link rel="stylesheet" href="assignment-four.css">
 	</header>
 	<body>
 		<h1>Temperature Conversion Calculator</h1>
-		<hr>
-			<p>
-				<label>Enter a temperature in degrees Fahrenheit:</label> <input id="inputFahrenheit" type="number" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
-			</p>
-			<p>
-				<button onclick="temperatureDisplay(output)">Convert to Celcius</button>
-			</p>
-			<p>
-				<label>Equivalent temperature in degrees Celcius:</label> <span id="outputCelcius"></span>
-			</p>
+			<div id="container" class="center-align">
+				<table>
+				<tr>
+					<th>
+						<img src="images/thermometer.png" alt="Thermometer">
+					</th>
+					<th>
+						<div class="left-align">
+						<p>
+							<label>Enter a temperature in degrees Fahrenheit:</label> 
+							<br>
+							<input id="inputFahrenheit" type="number" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+						</p>
+						<p>
+							<button onclick="validateForm(output, inputFahrenheit)">Convert to Celcius</button>
+						</p>
+						<p>
+							<label>Equivalent temperature in degrees Celcius:</label> <span id="outputCelcius"></span>
+						</p>
+					</div>
+					</th>
+				</tr>
+			</table>
+
+			</div>
 	</body>
 </html>
