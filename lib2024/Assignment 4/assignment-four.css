@@ -1,7 +1,9 @@
+/*Add background color to entire page.*/
 body {
 	background-color: #7f675b;
 }
 
+/*Format the heading.*/
 h1 {
 	text-align: center;
 	font-family: "gill sans", sans-serif;
@@ -9,10 +11,12 @@ h1 {
 	padding: 20px;
 }
 
+/*Assign a font*/
 p {
 	font-family: "gills sans", sans-serif;
 }
 
+/*Adds container for calculator.*/
 #container {
 	width: 500px;
 	background-color: #ffeaee;
@@ -22,10 +26,12 @@ p {
 	border-radius: 25px;
 }
 
+/*Center align containers.*/
 .center-align {
 	margin: auto;
 }
 
+/*Left-align text.*/
 .left-align {
 	text-align: left;
 	padding-left: 50px;

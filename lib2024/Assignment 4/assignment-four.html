@@ -1,42 +1,55 @@
 <!DOCTYPE html>
 <html>
-	<header>
+	<head>
+		<!--Meta data-->
 		<meta charset="UTF-8">
-		<title>Temperature Conversion Calculator</title>
 		<meta name="description" content="Temperature conversion calculator">
 		<meta name="keywords" content="HTML, CSS, JavaScript, temperature conversion, fahrenheit, celcius">
 		<meta name="author" content="Nicole Carpenter">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="icon" type="image/png" href="images/favicon.png">
+
+		<!--Page title and favicon-->
+		<title>Temperature Conversion Calculator</title>
+		<link rel="shortcut icon" type="image/png" href="images/favicon.png">
+
+		<!--CSS and JS links-->
 		<script type="text/javascript" src="calculator.js"></script>
 		<link rel="stylesheet" href="assignment-four.css">
-	</header>
+	</head>
 	<body>
+		<!--Header-->
 		<h1>Temperature Conversion Calculator</h1>
-			<div id="container" class="center-align">
-				<table>
-				<tr>
-					<th>
-						<img src="images/thermometer.png" alt="Thermometer">
-					</th>
-					<th>
-						<div class="left-align">
-						<p>
-							<label>Enter a temperature in degrees Fahrenheit:</label> 
-							<br>
-							<input id="inputFahrenheit" type="number" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
-						</p>
-						<p>
-							<button onclick="validateForm(output, inputFahrenheit)">Convert to Celcius</button>
-						</p>
-						<p>
-							<label>Equivalent temperature in degrees Celcius:</label> <span id="outputCelcius"></span>
-						</p>
+		<!--Container for calculator-->
+		<div id="container" class="center-align">
+			<!--Used a table to display thermometer in first column and calculator in second column.-->
+			<table>
+			<tr>
+				<th>
+					<!--Thermometer image-->
+					<img src="images/thermometer.png" alt="Thermometer">
+				</th>
+				<th>
+					<!--Left-align text-->
+					<div class="left-align">
+					<p>
+						<label>Enter a temperature in degrees Fahrenheit:</label>
+						<br><br>
+						<!--Input box-->
+						<input id="inputFahrenheit" type="number" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+					</p>
+					<p>
+						<!--Conversion button-->
+						<button onclick="validateForm(inputFahrenheit)">Convert to Celcius</button>
+					</p>
+					<p>
+						<!--Output appears here-->
+						<label>Equivalent temperature in degrees Celcius:</label> <span id="outputCelcius"></span>
+					</p>
 					</div>
-					</th>
-				</tr>
+				</th>
+			</tr>
 			</table>
 
-			</div>
+		</div>
 	</body>
 </html>
